@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Summary Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Book Summary Platform</h1>
+    <form id="summaryForm">
+      <input type="text" id="title" placeholder="Book Title" required />
+      <input type="text" id="author" placeholder="Author Name (optional)" />
+      <select id="category">
+        <option value="">Select Category</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Non-fiction">Non-fiction</option>
+        <option value="Biography">Biography</option>
+        <option value="Self-help">Self-help</option>
+      </select>
+      <textarea id="summary" placeholder="Write your summary here..." rows="5" required></textarea>
+      <label for="rating">Rating:</label>
+      <select id="rating" required>
+        <option value="">Select</option>
+        <option value="1">1 Star</option>
+        <option value="2">2 Stars</option>
+        <option value="3">3 Stars</option>
+        <option value="4">4 Stars</option>
+        <option value="5">5 Stars</option>
+      </select>
+      <button type="submit">Add Summary</button>
+    </form>
+
+    <div id="summaries"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
